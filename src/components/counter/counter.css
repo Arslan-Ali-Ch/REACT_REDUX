@@ -1,0 +1,61 @@
+.main{
+    display: flex;
+    height: 10vh;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+.btn{
+position: relative;
+    background-color: orange;
+text-align: center;
+width: 11rem;
+height: 3.5rem;
+border-radius: 10px;
+}
+.asyncbtn{
+    position: relative;
+    background-color: orange;
+text-align: center;
+width: 11rem;
+height: 3.5rem;
+border-radius: 10px;
+}
+.asyncbtn::after{
+    /* content: '';
+    background-color: rgb(46, 46, 53);
+    display: block;
+    position: absolute;
+    left: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: width 1s linear, opacity 0.5s ease 1s; */
+
+    content: '';
+    background-color: rgba(112, 76, 182, 0.15);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: width 2s linear, opacity 1s ease 2s;
+  
+}
+.asyncbtn:active::after{
+    width: 0%;
+    opacity: 1;
+    transition: 0s;
+}
+.btn:hover{
+    background-color: whitesmoke;
+    color: orange;
+}
+.asyncbtn:hover{
+    background-color: whitesmoke;
+    color: orange;
+
+}
